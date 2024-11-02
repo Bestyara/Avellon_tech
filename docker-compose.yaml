@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: avellon_tech
+      POSTGRES_PASSWORD: avellon_tech
+    ports:
+      - "5433:5432"

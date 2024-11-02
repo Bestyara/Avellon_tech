@@ -14,10 +14,12 @@ goto init
 
 :init
 call init.bat init
+docker-compose up -d
 goto run
 
 :run
 call venv\Scripts\activate
+call alembic upgrade head
 call python main.py
 
 :end
